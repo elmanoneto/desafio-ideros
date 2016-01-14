@@ -1,0 +1,15 @@
+<div class="content">
+  <div id="search">
+    <div class="input-group input-group">
+  <input type="text" class="form-control" placeholder="Pesquisar" ng-model="query">
+</div>
+  </div>
+  <div id="mail-list">
+    <ul>
+      <li ng-repeat="email in emails | filter:query"
+      ng-class="{'unread' : email.unread , '' : !email.unread}">
+      <a ui-sref="email({id: $index})">{{email.subject}}</a>
+    </li>
+    </ul>
+  </div>
+</div>

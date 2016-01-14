@@ -1,0 +1,4 @@
+com/example/model/Email.class
+com/example/dao/EmailDAO.class
+com/example/DemoApplication.class
+com/example/controller/EmailController.class
