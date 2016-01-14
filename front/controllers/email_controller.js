@@ -27,8 +27,4 @@ app.controller('EmailController', function ($scope, EmailService, $rootScope, $s
     console.log(error);
   })
 
-  $scope.$on('$location', function(next, current) {
-    console.log($location);
-  });
-
 })
